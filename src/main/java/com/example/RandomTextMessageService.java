@@ -1,9 +1,12 @@
 package com.example;
 
+import org.springframework.stereotype.Component;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
+@Component("randomTextMessageService")
 public class RandomTextMessageService implements MessageService {
 
     private String[] myStringArray = {"wiadomosc1", "wiadomosc2", "wiadomosc3",
